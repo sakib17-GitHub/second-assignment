@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 *{
     margin: 0px ; 
     padding: 0px;
@@ -21,7 +21,7 @@ nav{
     margin-top: 1rem;
 }
 
-.nav-title h2{
+.nav-title h1{
     font-size: 3rem;
     font-weight: 800;
     font-style: italic;
@@ -55,11 +55,122 @@ nav{
     display:none;
 }
 
+/* banner related style */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
+}
+
+.banner-content , .banner-image{
+    flex-basis: 100% ;
+    position: relative;
+}
+
+
+
+.banner-content h1{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.banner-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.8px;
+}
+
+#shape{
+    font-family:"Merienda", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.banner-button{
+    display: flex;
+    gap: 5rem;
+}
+
+.banner-button button{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 48px;
+    border-radius: 32px;
+    color: white;
+}
+
+.join-now{
+    background-color: #E6533C;
+    border: none;
+}
+
+.Download{
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+}
+
+.banner-image img{
+    max-width: 60%;
+    float: right;   
+}
+
+.badge-500{
+    border: 1px solid tomato;
+    width:140px;
+    height:80px;
+    padding: 0px 20px;
+    border-radius: 1rem;
+    position: absolute;
+    top:110px;
+    right:-60px
+    
+}
+
+.badge-350{
+    border: 1px solid tomato;
+    width:160px;
+    height:80px;
+    border-radius: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    bottom:24px;
+    left:140px;
+}
+.space{
+    width:30px;
+    height:30px;
+    border: none;
+    border-radius: 100%;
+    background-color: #E6533C;
+}
+.badge-500 h1{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.badge-350 h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.badge-500 p , .badge-350 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
 
 /* Mobile Responsive */
 
 @media screen and (max-width:576px) {
-    .nav-title h2{
+    .nav-title h1{
         font-size: 2rem;
     }
     .nav-menu{
@@ -67,5 +178,43 @@ nav{
     }
     .nav-icon{
         display:block;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner-button{
+        gap: 2rem;
+    }
+    
+    .banner-button button{
+        font-size: 0.8rem;
+        padding: 8px 24px;
+    }
+
+    .banner-image img{
+        max-width: 80%;
+        float: none; 
+    }
+
+    .badge-500{
+        width:120px;
+        height:60px;
+        right:10px ;  
+    }
+
+    .badge-350{
+        width:160px;
+        height:60px;
+        left: 0px;
+    }
+
+    .badge-500 h1 ,.badge-350 h1{
+        font-size: 1rem;
+    }
+
+    .badge-500 p , .badge-350 p{
+        font-size: 12px;
     }
 }
