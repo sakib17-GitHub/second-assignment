@@ -76,7 +76,7 @@ nav{
     font-weight: 900;
 }
 
-.banner-content p{
+.banner-content>p , .extra-mile-description{
     font-size: 1rem;
     font-weight: 400;
     margin-top: 2rem;
@@ -96,7 +96,7 @@ nav{
     gap: 5rem;
 }
 
-.banner-button button{
+.banner-button>button , .extra-mile-details>button{
     font-size: 1rem;
     font-weight: 600;
     padding: 16px 48px;
@@ -172,7 +172,7 @@ nav{
     text-align: center;
 }
 
-.change-habits-title{
+.change-habits-title , .extra-mile-details-title{
     font-size: 4rem;
     font-weight: 900;
 }
@@ -213,7 +213,21 @@ nav{
     line-height: 150%;
 }
 
-
+/* Run An Extra Mile Easily Part Style */
+.run-an-extra-mile{
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: rgb(245, 240, 240);
+    padding: 40px;
+    border-radius: 1rem;
+}
+.extra-mile-image>img{
+    width: 100%;
+    border-radius: 1rem;
+}
 
 /* Mobile Responsive */
 
@@ -236,7 +250,7 @@ nav{
         gap: 2rem;
     }
     
-    .banner-button button{
+    .banner-button button , .extra-mile-details>button{
         font-size: 0.8rem;
         padding: 8px 24px;
     }
@@ -270,14 +284,23 @@ nav{
         flex-direction: column;
     }
 
-    .change-habits-title{
+    .change-habits-title , .extra-mile-details-title{
         font-size: 2.2rem;
     }
     
-    .change-habits-description{
+    .change-habits-description , .extra-mile-description{
         font-size: 0.9rem;
         font-weight: 500;
         padding:0px 5px;
         line-height: 1.5rem;
+    }
+
+    .run-an-extra-mile{
+        flex-direction: column;
+        gap:3rem;
+    }
+
+    .extra-mile-details>button{
+        width: 100%;
     }
 }
