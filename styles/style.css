@@ -21,7 +21,7 @@ nav{
     margin-top: 1rem;
 }
 
-.nav-title h1{
+.nav-title h1 , .fitness h1{
     font-size: 3rem;
     font-weight: 800;
     font-style: italic;
@@ -382,7 +382,7 @@ tbody{
     font-size: 1.5rem;
     font-weight: 900;
 }
-.starting-at , .black-card-description , .classic-card-description{
+.starting-at , .black-card-description , .classic-card-description , .fitness p{
     font-size: 1rem;
     font-weight: 400;
     margin: 10px 0px;
@@ -401,6 +401,40 @@ tbody{
     color: orangered;
     font-weight: 600;
 }
+
+/* Footer Related Style */
+.footer-container{
+    display: grid;
+    grid-template-columns: 3fr repeat(2, 1fr);
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    
+}
+.get-started>ol{
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.fitness p{
+    line-height: 1.5rem;
+}
+.get-started h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.all-right-reserverd{
+    text-align: center;
+    border-top: 1px solid rgb(104, 100, 100);
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgb(77, 72, 72);
+
+}
+
 
 /* Mobile Responsive */
 
@@ -457,12 +491,12 @@ tbody{
         flex-direction: column;
     }
 
-    .change-habits-title , .extra-mile-details-title , .meet-our-team-title , .bmi-calculator-title{
+    .change-habits-title , .extra-mile-details-title , .meet-our-team-title , .bmi-calculator-title ,.membership-title{
         font-size: 2.2rem;
     }
     
     .change-habits-description , .extra-mile-description , .meet-our-team-description , .bmi-calculator-description , 
-    .calculate-your-bmi-description{
+    .calculate-your-bmi-description, .membership-description{
         font-size: 0.9rem;
         font-weight: 500;
         padding:0px 5px;
@@ -532,6 +566,12 @@ tbody{
     }
     .learn-more-and-join-now{
         gap: 5rem;
+    }
+
+
+    .footer-container{
+        grid-template-columns:repeat(1, 1fr);
+        gap: 3rem;        
     }
     
 }
