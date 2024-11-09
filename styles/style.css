@@ -172,12 +172,13 @@ nav{
     text-align: center;
 }
 
-.change-habits-title , .extra-mile-details-title , .meet-our-team-title{
+.change-habits-title , .extra-mile-details-title , .meet-our-team-title ,
+.bmi-calculator-title{
     font-size: 4rem;
     font-weight: 900;
 }
 
-.change-habits-description , .meet-our-team-description{
+.change-habits-description , .meet-our-team-description , .bmi-calculator-description{
     font-size: 1rem;
     font-weight: 400;
     padding:0px 140px;
@@ -230,6 +231,11 @@ nav{
 }
 
 /* Meet Our Team  */
+
+.meet-our-team , .bmi-calculator{
+    margin-bottom: 5rem;
+}
+
 .meet-our-team-title , .meet-our-team-description{
     text-align: center;
 }
@@ -269,6 +275,89 @@ nav{
     margin-top: 8px;
 }
 
+/* BMI Calculator */
+
+.bmi-calculator-title{
+    margin-left: 140px;
+}
+.bmi-chart-title{
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.bmi-chart-and-calculate{
+   display:grid;
+   grid-template-columns: repeat(2 , 1fr);
+   justify-content: center;
+   align-items: center;
+   
+}
+.bmi-chart-table{
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    letter-spacing: 1px;
+}
+.bmi-chart-table th, .bmi-chart-table td{
+    border: 1px solid rgb(160 160 160);
+    padding: 10px 20px;
+    text-align: left;
+}
+thead{
+    font-size: 1rem;
+    font-weight: 900;
+}
+tbody{
+    font-size: 0.9rem;
+}
+
+.calculate-your-bmi-title{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.calculate-your-bmi-description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.height , .weight , .age{
+    width: 220px;
+    padding: 8px 16px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 8px;
+    
+}
+.gender{
+    width: 254px;
+    padding: 8px 16px;
+    color:rgba(37, 36, 36, 0.6);
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 8px;
+}
+.activity-factor{
+    width: 512px;
+    padding: 8px 16px;
+    color:rgba(37, 36, 36, 0.6);
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 8px;
+}
+.age-gender , .select-an-activity-factor{
+    margin-top: 5px;
+}
+
+.calculate{
+    background-color: #E6533C;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 50px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 1.2rem;
+}
+
+
 /* Mobile Responsive */
 
 @media screen and (max-width:576px) {
@@ -290,7 +379,7 @@ nav{
         gap: 2rem;
     }
     
-    .banner-button button , .extra-mile-details>button{
+    .banner-button button , .extra-mile-details>button , .calculate{
         font-size: 0.8rem;
         padding: 8px 24px;
     }
@@ -324,11 +413,12 @@ nav{
         flex-direction: column;
     }
 
-    .change-habits-title , .extra-mile-details-title , .meet-our-team-title{
+    .change-habits-title , .extra-mile-details-title , .meet-our-team-title , .bmi-calculator-title{
         font-size: 2.2rem;
     }
     
-    .change-habits-description , .extra-mile-description , .meet-our-team-description{
+    .change-habits-description , .extra-mile-description , .meet-our-team-description , .bmi-calculator-description , 
+    .calculate-your-bmi-description{
         font-size: 0.9rem;
         font-weight: 500;
         padding:0px 5px;
@@ -347,4 +437,51 @@ nav{
     .team-member-container{
         grid-template-columns: repeat(1 , 1fr);
     }
+
+    .bmi-calculator-title{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .bmi-calculator-description{
+        text-align: center;
+    }
+    .bmi-chart-and-calculate{
+        grid-template-columns: repeat(1 , 1fr);
+     }
+
+    .bmi-chart , .bmi-calculate{
+        margin: 0px auto;
+    }
+    .bmi-chart-title{
+        text-align: center;
+    }
+    .calculate-your-bmi-title{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .calculate-your-bmi-description{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .form{
+        text-align: center;
+    }
+    .height-weight , .age-gender{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-bottom: 0.6rem;
+
+    }
+    .height , .weight , .age{
+        width: 140px;    
+    }
+    .gender{
+        width: 174px;
+    }
+    .activity-factor{
+        width: 360px;
+    }
+    
 }
