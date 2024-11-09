@@ -173,12 +173,12 @@ nav{
 }
 
 .change-habits-title , .extra-mile-details-title , .meet-our-team-title ,
-.bmi-calculator-title{
+.bmi-calculator-title , .membership-title{
     font-size: 4rem;
     font-weight: 900;
 }
 
-.change-habits-description , .meet-our-team-description , .bmi-calculator-description{
+.change-habits-description , .meet-our-team-description , .bmi-calculator-description,.membership-description{
     font-size: 1rem;
     font-weight: 400;
     padding:0px 140px;
@@ -357,6 +357,50 @@ tbody{
     margin-top: 1.2rem;
 }
 
+/* Membership card */
+.membership{
+    margin-bottom: 5rem;
+}
+
+.membership-title , .membership-description{
+    text-align: center;
+}
+
+.membership-card-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap:2rem;
+}
+
+.pf-black-card , .classic-card{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.black-card-title , .classic-card-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.starting-at , .black-card-description , .classic-card-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.learn-more-and-join-now{
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+.learn-more{
+    color: orangered;
+    font-weight: 600;
+}
 
 /* Mobile Responsive */
 
@@ -482,6 +526,12 @@ tbody{
     }
     .activity-factor{
         width: 360px;
+    }
+    .membership-card-container{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .learn-more-and-join-now{
+        gap: 5rem;
     }
     
 }
