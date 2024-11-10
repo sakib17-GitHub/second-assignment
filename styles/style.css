@@ -6,10 +6,13 @@
 }
 
 body{
+    font-family: "Inter", sans-serif;
+    background-color: #000000;   
+}
+
+header , main , footer{
     max-width:80%;
     margin: 0px auto ; 
-    font-family: "Inter", sans-serif;
-    /* background-color: #000000; */
 }
 
 /* Nav styles */
@@ -25,7 +28,8 @@ nav{
     font-size: 3rem;
     font-weight: 800;
     font-style: italic;
-    color:#E6533C;
+    color:rgba(230, 83, 60, 1);
+
 }
 
 .nav-menu ul{
@@ -42,12 +46,12 @@ nav{
 
 .nav-menu ul li a{
     text-decoration: none;
-    color:#000000;
+    color:rgba(255, 255, 255, 1);
     font-size: 0.9rem;
     font-weight: 400;
 }
 .nav-menu ul li:nth-child(1){     
-    background-color: #E6533C;
+    background-color: rgba(230, 83, 60, 1);
     padding: 8px 16px;
     border-radius: 24px;
 }
@@ -74,6 +78,8 @@ nav{
 .banner-content h1{
     font-size: 5rem;
     font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+
 }
 
 .banner-content>p , .extra-mile-description{
@@ -83,6 +89,9 @@ nav{
     margin-bottom: 1.5rem;
     line-height: 1.5rem;
     letter-spacing: 0.8px;
+    color:rgba(255, 255, 255, 0.5);
+
+
 }
 
 #shape{
@@ -101,17 +110,18 @@ nav{
     font-weight: 600;
     padding: 16px 48px;
     border-radius: 32px;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
+
 .join-now{
-    background-color: #E6533C;
+    background-color:rgba(230, 83, 60, 1);
     border: none;
 }
 
 .Download{
+    border: 1px solid rgba(255, 255, 255, 1);
     background-color: #000000;
-    border: 1px solid #FFFFFF;
 }
 
 .banner-image img{
@@ -120,19 +130,20 @@ nav{
 }
 
 .badge-500{
-    border: 1px solid tomato;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width:140px;
     height:80px;
     padding: 0px 20px;
     border-radius: 1rem;
     position: absolute;
     top:110px;
-    right:-60px
-    
+    right:-60px;
 }
 
 .badge-350{
-    border: 1px solid tomato;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width:160px;
     height:80px;
     border-radius: 1rem;
@@ -149,20 +160,26 @@ nav{
     height:30px;
     border: none;
     border-radius: 100%;
-    background-color: #E6533C;
+    background-color:rgba(230, 83, 60, 1);
+
 }
 .badge-500 h1{
     margin-top: 10px;
     font-weight: 700;
     font-size: 2rem;
+    color:rgba(255, 255, 255, 1);
 }
 .badge-350 h1{
     font-weight: 700;
     font-size: 2rem;
+    color:rgba(250, 250, 249, 1);
+
 }
 .badge-500 p , .badge-350 p{
     font-size: 14px;
     font-weight: 400;
+    color:rgba(255, 255, 255, 0.65);
+
 }
 
 /* Change Your Habits Style */
@@ -176,6 +193,8 @@ nav{
 .bmi-calculator-title , .membership-title{
     font-size: 4rem;
     font-weight: 900;
+    color:rgba(255, 255, 255, 1);
+
 }
 
 .change-habits-description , .meet-our-team-description , .bmi-calculator-description,.membership-description{
@@ -186,7 +205,7 @@ nav{
     letter-spacing: 0.8px;
     margin-top: 0.8rem;
     margin-bottom: 4rem;
-
+    color:rgba(255, 255, 255, 0.5);
 }
 
 .change-habits-cards-container{
@@ -205,6 +224,7 @@ nav{
 .card-details>h3{
     font-size: 1.2rem;
     font-weight: 600;
+    color:rgba(255, 255, 255, 1);
 }
 
 .card-details>p{
@@ -212,6 +232,7 @@ nav{
     font-weight: 500;
     margin-top: .5rem;
     line-height: 150%;
+    color:rgba(255, 255, 255, 0.5);
 }
 
 /* Run An Extra Mile Easily Part Style */
@@ -221,7 +242,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-color: rgb(245, 240, 240);
+    background-color:rgba(34, 34, 34, 1);
     padding: 40px;
     border-radius: 1rem;
 }
@@ -265,13 +286,14 @@ nav{
 .trainer-name{
     font-size: 1.2rem;
     font-weight: 900;
-    color: #FFFFFF;
+    color:rgba(255, 255, 255, 1);
+
 }
 
 .trainer-title{
     font-size: .9rem;
     font-weight: 400;
-    color: rgb(228, 225, 225);
+    color:rgba(255, 255, 255, 0.5);
     margin-top: 8px;
 }
 
@@ -284,6 +306,7 @@ nav{
     font-size: 1.6rem;
     font-weight: 900;
     margin-bottom: 2rem;
+    color:rgba(255, 255, 255, 1);
 }
 .bmi-chart-and-calculate{
    display:grid;
@@ -305,14 +328,17 @@ nav{
 thead{
     font-size: 1rem;
     font-weight: 900;
+    color:rgba(255, 255, 255, 1);
 }
 tbody{
     font-size: 0.9rem;
+    color:rgba(255, 255, 255, 0.5);
 }
 
 .calculate-your-bmi-title{
     font-size: 1.6rem;
     font-weight: 900;
+    color:rgba(255, 255, 255, 1);
 }
 .calculate-your-bmi-description{
     font-size: 0.9rem;
@@ -320,6 +346,8 @@ tbody{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     text-align: left;
+    color:rgba(255, 255, 255, 0.5);
+
 }
 .height , .weight , .age{
     width: 220px;
@@ -347,13 +375,13 @@ tbody{
 }
 
 .calculate{
-    background-color: #E6533C;
+    background-color:rgba(230, 83, 60, 1);
     border: none;
     font-size: 1rem;
     font-weight: 600;
     padding: 12px 50px;
     border-radius: 30px;
-    color: white;
+    color:rgba(255, 255, 255, 1);
     margin-top: 1.2rem;
 }
 
@@ -373,23 +401,79 @@ tbody{
 }
 
 .pf-black-card , .classic-card{
-    border: 1px solid black;
     border-radius: 1rem;
     padding: 1.5rem 2rem;
+}
+
+.pf-black-card{
+    background-color:black;
+    border: 1px solid white;
+}
+
+.classic-card{
+    background-color:rgba(255, 255, 255, 1);
+    border: 1px solid black;
 }
 
 .black-card-title , .classic-card-title{
     font-size: 1.5rem;
     font-weight: 900;
 }
+.black-card-title{
+    color: #FFFFFF;
+}
 .starting-at , .black-card-description , .classic-card-description , .fitness p{
     font-size: 1rem;
     font-weight: 400;
     margin: 10px 0px;
 }
-.price{
+.starting-at{
+    color:#707070;
+}
+#twenty-four{
+    color: #FFE600;
     font-size: 2rem;
+}
+#fifteen{
+    color:  #561496;
+    font-size: 2rem;
+}
+.classic-card-description{
+    color: #14142B;
+}
+.black-card-description{
+    color: #FFFFFF;
+}
+.price{
+    font-size: 1rem;
     font-weight: 900;
+}
+.pf-black-card>.price{
+    color:#FFFFFF;
+}
+.pf-black-card-button,.classic-card-button{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 50px;
+    border-radius: 30px;
+    color:rgba(255, 255, 255, 1);
+    margin-top: 1.2rem;
+}
+.pf-black-card-button{
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: #1b1b1b;
+}
+.classic-card-button{
+    border: 1px solid black;
+    background-color: black;
+}
+.learn-more-left{
+    color:#FFFFFF;
+    font-weight: 600;
+}
+.learn-more-right{
+    color:black;
+    font-weight: 600;
 }
 .learn-more-and-join-now{
     display: flex;
@@ -397,10 +481,7 @@ tbody{
     justify-content: center;
     align-items: center;
 }
-.learn-more{
-    color: orangered;
-    font-weight: 600;
-}
+
 
 /* Footer Related Style */
 .footer-container{
@@ -416,14 +497,18 @@ tbody{
     list-style: none;
     line-height: 2rem;
     font-size: 1rem;
+    color:rgba(255, 255, 255, 0.5);
 }
 .fitness p{
     line-height: 1.5rem;
+    color:rgba(255, 255, 255, 0.5);
+
 }
 .get-started h3{
-    font-size: 1.5rem;
-    font-weight: 900;
+    font-size: 1.3rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    color:rgba(255, 255, 255, 1);
 }
 
 .all-right-reserverd{
@@ -433,6 +518,10 @@ tbody{
     margin-bottom: 2rem;
     color: rgb(77, 72, 72);
 
+}
+
+button{
+    cursor: pointer;
 }
 
 
