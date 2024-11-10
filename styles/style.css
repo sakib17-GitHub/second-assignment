@@ -536,12 +536,15 @@ button{
     }
     .nav-icon{
         display:block;
+        color:white;
     }
 
     .banner{
         flex-direction: column;
     }
-
+    .banner-content h1{
+        font-size: 3.2rem;
+    }
     .banner-button{
         gap: 2rem;
     }
@@ -653,11 +656,22 @@ button{
     .membership-card-container{
         grid-template-columns: repeat(1 , 1fr);
     }
+    .black-card-title , .classic-card-title{
+        font-size: 1.2rem;
+    }
+    .black-card-description , .classic-card-description{
+        font-size: 0.9rem;
+    }
+    .learn-more-left,.learn-more-right{
+        font-size: 0.8rem;
+    }
+    .pf-black-card-button,.classic-card-button{
+        font-size: 0.8rem;
+        padding: 10px 30px;
+    }
     .learn-more-and-join-now{
         gap: 5rem;
     }
-
-
     .footer-container{
         grid-template-columns:repeat(1, 1fr);
         gap: 3rem;        
