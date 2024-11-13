@@ -10,7 +10,7 @@ body{
     background-color: #000000;   
 }
 
-header , main , footer{
+header , .change-habits , .run-an-extra-mile , .meet-our-team ,.bmi-title-and-description-container,.bmi-chart-and-calculate, .membership , .footer{
     max-width:80%;
     margin: 0px auto ; 
 }
@@ -160,7 +160,12 @@ nav{
     border: none;
     border-radius: 100%;
     background-color:rgba(230, 83, 60, 1);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    cursor: pointer;
 }
 .badge-500 h1{
     margin-top: 10px;
@@ -241,7 +246,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-color:rgba(34, 34, 34, 1);
+    background-color:#222222;
     padding: 40px;
     border-radius: 1rem;
 }
@@ -266,6 +271,9 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color:#191919;
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 .trainer{
@@ -307,11 +315,16 @@ nav{
     margin-bottom: 2rem;
     color:rgba(255, 255, 255, 1);
 }
+.bmi-chart-and-calculate-container{
+    background-color: #222222;
+    padding: 3rem 0rem;
+}
 .bmi-chart-and-calculate{
    display:grid;
    grid-template-columns: repeat(2 , 1fr);
    justify-content: center;
    align-items: center;
+   background-color: #222222;
    
 }
 .bmi-chart-table{
@@ -351,23 +364,27 @@ tbody{
 .height , .weight , .age{
     width: 220px;
     padding: 8px 16px;
-    border: 1px solid rgb(182, 180, 180);
     border-radius: 8px;
-    
+    background-color: #383838;
+    color:#697569;
+    border: none;
+
 }
 .gender{
-    width: 254px;
+    width: 252px;
     padding: 8px 16px;
-    color:rgba(37, 36, 36, 0.6);
-    border: 1px solid rgb(182, 180, 180);
+    color:#697569;
     border-radius: 8px;
+    background-color: #383838;
+    border: none;
 }
 .activity-factor{
-    width: 512px;
-    padding: 8px 16px;
-    color:rgba(37, 36, 36, 0.6);
-    border: 1px solid rgb(182, 180, 180);
+    width: 508px;
+    padding: 8px 12px;
+    color:#697569;
     border-radius: 8px;
+    background-color: #383838;
+    border: none;
 }
 .age-gender , .select-an-activity-factor{
     margin-top: 5px;
@@ -483,6 +500,11 @@ tbody{
 
 
 /* Footer Related Style */
+
+footer{
+    background-color: #191919;
+    padding: 3rem ;
+}
 .footer-container{
     display: grid;
     grid-template-columns: 3fr repeat(2, 1fr);
@@ -498,6 +520,9 @@ tbody{
     font-size: 1rem;
     color:rgba(255, 255, 255, 0.5);
 }
+.get-started>ol>li{
+    cursor: pointer;
+}
 .fitness p{
     line-height: 1.5rem;
     color:rgba(255, 255, 255, 0.5);
@@ -510,13 +535,11 @@ tbody{
     color:rgba(255, 255, 255, 1);
 }
 
-.all-right-reserverd{
+.all-right-reserved{
     text-align: center;
     border-top: 1px solid rgb(104, 100, 100);
     padding-top: 1.5rem;
-    margin-bottom: 2rem;
     color: rgb(77, 72, 72);
-
 }
 
 button{
@@ -536,6 +559,7 @@ button{
     .nav-icon{
         display:block;
         color:white;
+        cursor: pointer;
     }
 
     .banner{
@@ -597,6 +621,7 @@ button{
     .run-an-extra-mile{
         flex-direction: column;
         gap:3rem;
+        padding: 20px;
     }
 
     .extra-mile-details>button{
